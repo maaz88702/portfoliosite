@@ -1,0 +1,48 @@
+@media screen and (max-width:725px) {
+    html {
+        font-size: 14px;
+    }
+
+    #about .text_wrapper {
+        gap: 1rem;
+    }
+
+    #about .text_wrapper img {
+        width: 33%;
+    }
+}
+
+@media (max-width:580px) {
+    #about .text_wrapper img {
+       display: none;
+    }
+    #about .text_wrapper p {
+        width: 100%;
+       letter-spacing: 1px;
+       }
+       footer .social_links {
+        right: 2rem;
+    }
+    footer {
+       justify-content: flex-start;
+        padding: 0.5rem 6%;
+    }
+      #services .card_wrapper .card {
+    width: 100%;
+}
+
+}
+@media (max-width:461px) {
+    html{
+        font-size: 12px;
+    }
+    footer .social_links a {
+        margin: 0 3px;
+    }
+  
+}
+@media (max-width:379px) {
+    footer{
+        font-size: 0.8rem;
+    }
+}

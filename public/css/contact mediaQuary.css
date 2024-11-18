@@ -1,0 +1,43 @@
+@media screen and (max-width:870px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:685px) {
+    html {
+        font-size: 12px;
+    }
+
+    main a {
+        padding: 0.7rem;
+    }
+
+    footer .text {
+        margin-right: 6rem;
+    }
+}
+
+@media screen and (max-width:583px) {
+    footer {
+        justify-content: flex-start;
+        padding: 0.5rem 4%;
+    }
+
+    footer .text {
+        margin-right: 0rem;
+    }
+
+    footer .social_links a {
+        margin: 0 2px;
+    }
+
+    footer .social_links {
+        right: 1rem;
+    }
+}
+@media screen and (max-width:583px) {
+    main a {
+        padding: 0.5rem;
+    }
+}

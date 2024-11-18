@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Exo", var(--default-font-family);
+}
+
+:root {
+    --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+        "Source Han Sans CN", sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+body::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("../images/community.jpg");
+    background-size:cover;
+    background-position: center;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    /* position: fixed; */
+    height: 8vh;
+    padding: 0 4% 0 7%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+nav .left a {
+    margin: 0 0.5rem;
+}
+nav .left a.active{
+    position: relative;
+}
+nav .left a.active:before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 3px;
+    top: 120%;
+    left: 0;
+    background-color: #eee;
+}
+nav .left a:hover {
+    color: #bbb;
+}
+
+nav .right a {
+    margin: 0 0.5rem;
+}
+
+/* MAIN */
+
+
+main{
+   
+    position: absolute;
+    display: flex;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main a{
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #00000066;
+    margin: 0 0.5rem;
+    padding: 1rem 1rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    transition: all 0.3s;
+    /* width: 2rem;
+    height: 2rem; */
+}
+main a i{
+    font-size: 1.5rem;
+}
+main a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0.5rem 0;
+    color: #fff;
+    box-shadow: 0 -2px 5px 0px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+
+}
+
+footer .text {
+    text-transform: capitalize;
+}
+
+footer .social_links {
+    position: absolute;
+    right: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer .social_links a {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .social_links a i {
+    transition: all 0.3s;
+}
+
+footer .social_links a i:hover {
+ font-size: 1.2rem;
+}
